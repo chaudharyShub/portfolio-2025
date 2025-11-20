@@ -11,7 +11,7 @@ const About = () => {
         <Card className="p-8 md:p-12 bg-card border-border">
           <div className="space-y-6 text-lg leading-relaxed text-foreground">
             <p>
-              With <span className="text-primary font-semibold">5 years of total experience</span>, 
+              With <span className="text-primary font-semibold">5+ years of total experience</span>, 
               I've navigated a unique career path that combines engineering precision with creative 
               web development.
             </p>
@@ -23,7 +23,7 @@ const About = () => {
             </p>
             
             <p>
-              For the past <span className="text-primary font-semibold">3 years</span>, I've been crafting 
+              For the past <span className="text-primary font-semibold">3+ years</span>, I've been crafting 
               responsive, user-centric web applications using modern technologies. My engineering background 
               gives me a unique perspective on problem-solving, attention to detail, and systematic thinking.
             </p>

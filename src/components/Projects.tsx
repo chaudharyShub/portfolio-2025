@@ -6,27 +6,24 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Built a full-featured e-commerce platform with product management, cart functionality, and secure checkout process using React and Next.js.",
-      technologies: ["React.js", "Next.js", "Tailwind CSS", "Node.js"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "🧾"
+      title: "SportZentric",
+      description: "Developed a sports-tech platform enabling coaches to create and manage training batches, allowing athletes to seamlessly join and enhance their skills through structured sessions and events.",
+      technologies: ["React.js", "Tailwind CSS", "React hook form", "Styled Components", "RTK Quesr"],
+      liveUrl: "javascript:void(0);",
+      image: "🏀"
     },
     {
-      title: "Task Management App",
-      description: "Developed a collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
-      technologies: ["React.js", "TypeScript", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "📋"
+      title: "RunTheDay (RTD)",
+      description: "Built a US-based online race/marathon registration and result publishing platform with real-time user interactions, supporting diverse roles including Race Directors, Race Runners, and Volunteers.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Redux", "Material UI"],
+      liveUrl: "https://runtheday.com",
+      image: "🏃"
     },
     {
       title: "Desktop Application",
-      description: "Created a cross-platform desktop application using Electron.js with native features and seamless user experience.",
-      technologies: ["Electron.js", "React.js", "Node.js"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      description: "Built a cross-platform (Windows & Linux) desktop application with a background service to monitor and log system activity, capturing power on/off events and sleep/wake cycles with high accuracy.",
+      technologies: ["Electron.js", "React.js", "Node.js", "MQTT", "Redux"],
+      liveUrl: "javascript:void(0);",
       image: "💻"
     },
   ];
@@ -70,20 +67,13 @@ const Projects = () => {
               <div className="flex gap-3">
                 <Button
                   size="sm"
+                  disabled={project.liveUrl === "javascript:void(0);"}
                   variant="outline"
-                  className="flex-1 border-primary text-primary hover:bg-primary/10"
+                  className="flex-1 border-primary text-primary hover:bg-primary/10 hover:text-white"
                   onClick={() => window.open(project.liveUrl, '_blank')}
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Live Demo
-                </Button>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="border-border hover:border-primary"
-                  onClick={() => window.open(project.githubUrl, '_blank')}
-                >
-                  <Github className="w-4 h-4" />
                 </Button>
               </div>
             </Card>

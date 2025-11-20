@@ -4,22 +4,22 @@ import { Briefcase, Wrench } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Frontend Developer",
+      title: "Software Engineer",
       company: "IT Industry",
-      duration: "3 Years",
+      duration: "3+ Years",
       period: "Recent",
-      description: "Building modern web applications with React, Next.js, and cutting-edge frontend technologies. Focused on creating responsive, performant, and user-friendly interfaces.",
+      description: "I work as a Frontend Developer specializing in React.js, Next.js, JavaScript, HTML, and CSS, building responsive, user-friendly interfaces with clean and optimized code. I collaborate closely with teams to translate requirements into functional UI and ensure smooth user experiences. Alongside frontend work, I also have hands-on experience with backend technologies like Node.js, Express, and MongoDB, enabling me to handle APIs, basic server logic, and end-to-end functionality when needed.",
       icon: Briefcase,
-      technologies: ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Electron.js"]
+      technologies: ["React.js", "Next.js", "JavaScript", "HTML", "CSS", "Tailwind", "TypeScript", "Node.js", "Express.js", "MongoDB", "Electron.js", "Material UI", "Redux", "Git", "REST APIs"]
     },
     {
       title: "Mechanical Engineer",
-      company: "Engineering Sector",
+      company: "Manufactuing Sector",
       duration: "2 Years",
       period: "Previous",
-      description: "Worked on machine's preventive and breakdown maintenance and project management. Developed strong problem-solving and team leading skills and attention to detail that now enhance my development approach.",
+      description: "I led a team of 10–12 technicians in the maintenance department of a bathmat manufacturing plant, overseeing both preventive and breakdown maintenance to ensure uninterrupted production. I developed maintenance schedules, identified root causes of equipment failures, and streamlined repair processes to reduce downtime. I also coordinated closely with production teams, maintained documentation, and ensured adherence to safety and quality standards.",
       icon: Wrench,
-      technologies: ["Preventive Maintenance", "Breakdown Maintenance", "Project Management"]
+      technologies: ["Supervision", "Preventive Maintenance", "Breakdown Maintenance", "Project Management", "Leadership", "Ownership"]
     },
   ];
 
@@ -62,7 +62,7 @@ const Experience = () => {
                       {exp.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-3">
                       {exp.technologies.map((tech) => (
                         <span
                           key={tech}

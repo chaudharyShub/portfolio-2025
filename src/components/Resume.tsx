@@ -32,7 +32,7 @@ const Resume = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-all hover:scale-105"
               onClick={() => {
                 // Replace with your actual resume URL
-                window.open('/path-to-your-resume.pdf', '_blank');
+                window.open('/Shubham_works.pdf', '_blank');
               }}
             >
               <Download className="mr-2 h-5 w-5" />
@@ -41,9 +41,9 @@ const Resume = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10"
+              className="border-primary text-primary hover:bg-primary/10 hover:text-white"
               onClick={() => {
-                window.open('/path-to-your-resume.pdf', '_blank');
+                window.open('/Shubham_works.pdf', '_blank');
               }}
             >
               <FileText className="mr-2 h-5 w-5" />

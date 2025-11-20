@@ -33,7 +33,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="border-primary text-primary hover:bg-primary/10"
+            className="border-primary text-primary hover:bg-primary/10 hover:text-white"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             View My Work
